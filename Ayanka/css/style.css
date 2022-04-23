@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800;900&display=swap');
+
+/*Padrão*/
+
+body {
+    margin: 0;
+    background-color: #2B2B2B;
+}
+
+body::-webkit-scrollbar {
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border: 3px solid #2A2A2A;
+}
+
+a {
+    text-decoration: none;
+    color: #70A0FF;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    font-family: 'Public Sans';
+    color: white;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+}
+
+/*--Fim do padrão*/
+
+/*Otimização*/
+
+#Rectangle1,
+.colun-box,
+.conteiner,
+.row,
+.row-1,
+.conteiner-left,
+.box-category-1,
+.box-category-2,
+.box-category-3,
+#bar-tittle {
+    display: flex;
+}
+
+#Rectangle1,
+.box-category-1,
+.box-category-2,
+.box-category-3 {
+    align-items: center;
+    justify-content: center;
+}
+
+.background,
+.background-two,
+.nav-bar,
+.conteiner-one,
+.conteiner-two {
+    background-color: #000000;
+}
+
+.box1,
+.box2,
+.banner img,
+.sinop {
+    border: 4px solid #2A2A2A;
+}
+
+.conteiner-left,
+.colun-box,
+.row,
+.row-1,
+#bar-tittle {
+    justify-content: space-between;
+}
+
+.conteiner-left,
+.colun-box {
+    flex-direction: column;
+}
+
+.conteiner-left,
+.nav-bar,
+.line {
+    width: 100%;
+}
+
+.box-category-1,
+.box-category-2,
+.box-category-3,
+.line {
+    background: #2A2A2A;
+}
+
+.conteiner-one,
+.conteiner-two {
+    width: 647px;
+}
+
+.bar-manga,
+.sinop,
+.box1,
+.box2 {
+    height: 100%;
+}
+
+/*--Fim da otimização*/
+
+/*Geral*/
+
+.conteiner-left {
+    margin: 20px 0 26px 40px;
+    height: 770px;
+}
+
+.conteiner-one {
+    height: 135px;
+}
+
+.conteiner-two {
+    height: 628px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.sinop h2 {
+    margin-bottom: 7px;
+}
+
+.colun-box p {
+    font-size: 15px;
+    line-height: 23px;
+    padding-bottom: 6px;
+}
+
+.nav-bar {
+    margin: 0;
+    height: 90px;
+}
+
+.row-1 {
+    margin-bottom: 12px;
+}
+
+.limiter {
+    max-width: 200px;
+}
+
+.line {
+    height: 5px;
+    margin-top: 8px;
+}
+
+.background {
+    width: 450px;
+    height: 1558px;
+}
+
+#bar-tittle {
+    margin-bottom: 10px;
+    height: 39px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.pad {
+    padding: 0 80px 0 40px;
+}
+
+.pad-2 {
+    padding: 0 0 0 27px;
+}
+
+.box1,
+.box2 {
+    margin-top: 20px;
+    width: 266px;
+}
+
+.banner img {
+    max-width: 320px;
+    max-height: 460px;
+}
+
+.pad-1 {
+    padding: 18px 12px 16px 12px;
+}
+
+#Rectangle1 {
+    padding: 1px;
+    width: 105px;
+    height: 27px;
+
+    border: 3px solid #2A2A2A;
+}
+
+#Rectangle1 p {
+    font-weight: 400;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.sinop {
+    padding: 18px 14px 16px 12px;
+    width: 585px;
+}
+
+.pad-3 {
+    padding: 20px 30px 20px 15px;
+}
+
+.sinop p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.box-category-1,
+.box-category-2,
+.box-category-3 {
+    margin-bottom: 8px;
+    padding: 5px 0 5px 0;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.box-category-2,
+.box-category-3 {
+    opacity: 50%;
+}
+
+.box-category-1 h3,
+.box-category-2 h3,
+.box-category-3 h3 {
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+/*--Fim do geral*/
+
+/*Media screen*/
+
+@media screen and (max-width: 1260px) {
+    body {
+        background-color: #000000;
+    }
+
+    .banner {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .conteiner {
+        flex-direction: column;
+    }
+
+    .conteiner-left {
+        margin: 20px 0 0 0;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .row {
+        width: 220px;
+    }
+
+    .background {
+        height: 100%;
+    }
+
+    .background,
+    .box1,
+    .box2 {
+        width: 96%;
+    }
+
+    .conteiner-left,
+    .conteiner-one,
+    .conteiner-two,
+    .sinop {
+        width: 94%;
+    }
+
+    .limiter {
+        max-width: 500px;
+    }
+
+    .pad,
+    .pad-3 {
+        padding: 0 10px 0 30px;
+    }
+}
