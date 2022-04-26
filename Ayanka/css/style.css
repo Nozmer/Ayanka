@@ -8,15 +8,6 @@ body {
     background-color: #2B2B2B;
 }
 
-body::-webkit-scrollbar {
-    background-color: black;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: black;
-    border: 3px solid #2A2A2A;
-}
-
 a {
     text-decoration: none;
     color: #70A0FF;
@@ -72,7 +63,8 @@ p {
 .box1,
 .box2,
 .banner img,
-.sinop {
+.sinop,
+.characters-staff {
     border: 4px solid #2A2A2A;
 }
 
@@ -108,7 +100,6 @@ p {
 }
 
 .bar-manga,
-.sinop,
 .box1,
 .box2 {
     height: 100%;
@@ -120,15 +111,15 @@ p {
 
 .conteiner-left {
     margin: 20px 0 26px 40px;
-    height: 770px;
+    height: 100%;
 }
 
 .conteiner-one {
-    height: 135px;
+    height: 124px;
 }
 
 .conteiner-two {
-    height: 628px;
+    height: 1000px;
 }
 
 h1 {
@@ -223,14 +214,16 @@ h2 {
 
 .sinop {
     padding: 18px 14px 16px 12px;
-    width: 585px;
+    height: auto;
+    width: auto;
 }
 
 .pad-3 {
     padding: 20px 30px 20px 15px;
 }
 
-.sinop p {
+.sinop p,
+.box-characters p {
     font-weight: 500;
     font-size: 14px;
     line-height: 25px;
@@ -257,7 +250,73 @@ h2 {
     font-size: 16px;
 }
 
+.line-right {
+    width: 100%;
+    margin-top: 15px;
+    height: 5px;
+    background: #2A2A2A;
+    border-radius: 0px 0px 5px 5px;
+}
 
+#data-1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-warp {
+    display: grid;
+    overflow-x: scroll;
+    overflow-x: hidden;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+}
+
+.characters-staff {
+    height: 80px;
+
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+}
+
+.characters-staff img {
+    object-fit: cover;
+    width: 100%;
+    height: 80px;
+}
+
+.characters {
+    display: inline-grid;
+    grid-template-columns: 78px auto;
+
+}
+
+.staff {
+    display: inline-grid;
+    grid-template-columns: auto 78px;
+    text-align: end;
+
+}
+
+.cover {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pad-4 {
+    padding: 10px;
+}
+
+.name {
+    font-size: 14px;
+    line-height: 22px;
+    height: 45px;
+}
+
+.sub {
+    font-size: 12px;
+    opacity: 30%;
+}
 
 /*--Fim do geral*/
 
