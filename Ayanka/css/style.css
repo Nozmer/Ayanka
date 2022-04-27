@@ -263,6 +263,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+
 .grid-warp {
     display: grid;
     overflow-x: scroll;
@@ -321,6 +322,12 @@ h2 {
 /*--Fim do geral*/
 
 /*Media screen*/
+
+@media screen and (max-width: 449px) {
+    .grid-warp {
+        overflow-x: scroll;
+    }
+}
 
 @media screen and (max-width: 1260px) {
     body {
